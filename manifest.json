@@ -1,0 +1,17 @@
+{
+  "name": "Senshi · Dados",
+  "version": "1.0.0",
+  "manifest_version": 1,
+  "author": "Mesa Odisseia (baseado no Dice do Owlbear Rodeo, GPL-3.0)",
+  "homepage_url": "https://github.com/owlbear-rodeo/dice",
+  "icon": "https://drlhama.github.io/senshi-dados/icon.svg",
+  "description": "Dados 3D com dados personalizados de N faces e sacos de dados nomeados com bônus.",
+  "action": {
+    "title": "Dados",
+    "icon": "https://drlhama.github.io/senshi-dados/icon.svg",
+    "popover": "https://drlhama.github.io/senshi-dados/",
+    "height": 700,
+    "width": 375
+  },
+  "background_url": "https://drlhama.github.io/senshi-dados/background.html"
+}

@@ -1,0 +1,4 @@
+Senshi · Dados é uma versão modificada do "Dice" do Owlbear Rodeo (https://github.com/owlbear-rodeo/dice),
+licenciada sob GPL-3.0 (veja o arquivo LICENSE). O código-fonte completo, com as modificações, está na pasta
+"owlbear-dados" do projeto da mesa e no arquivo senshi-dados-fonte.zip.
+Modificações: dados personalizados de qualquer número de faces de 2 a 1000 (geração automática), sacos de dados nomeados com bônus e vantagem.
