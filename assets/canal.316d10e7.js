@@ -1,0 +1,1 @@
+import{g as t}from"./getPluginId.ae619b2b.js";const c=t("entidade"),n=t("entidade-tela"),e=t("entidade-tela-cheia"),l=()=>{try{return localStorage.getItem(e)!=="0"}catch{return!0}},s=a=>{try{localStorage.setItem(e,a?"1":"0")}catch(o){console.warn(o)}};export{c as C,n as I,s as l,l as t};
