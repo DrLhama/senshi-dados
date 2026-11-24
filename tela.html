@@ -24,6 +24,13 @@
       .explosao .placa { bottom: auto; transform: translate(-50%, -100%); font-size: clamp(15px, 2vh, 20px); padding: 3px 14px; transition: margin .5s cubic-bezier(.2, .9, .3, 1); }
       .explosao.lida .placa { margin-top: -14px; animation: sobe .5s cubic-bezier(.2, 1.3, .4, 1); }
       .explosao .placa b { font-size: 2.1em; }
+      .ligas { position: absolute; inset: 0; width: 100%; height: 100%; }
+      .ligas line { vector-effect: non-scaling-stroke; stroke: var(--fio); stroke-width: 2; stroke-linecap: round; opacity: .75; filter: drop-shadow(0 0 4px var(--fio)); }
+      .explosao .placa.mob { font-size: 13px; gap: 6px; padding: 2px 10px; }
+      .explosao .placa.mob span { max-width: 78px; }
+      .explosao .placa.mob b { font-size: 1.75em; line-height: 1.2; }
+      .pregada .placa.mob, .pregada .ligas { opacity: 0; transition: opacity .3s; }
+      .apaga .quadro { opacity: 0; transition: opacity .6s; }
       .explosao .placa.total { font-size: clamp(16px, 2.4vh, 24px); box-shadow: 0 0 0 1.5px var(--cor), 0 0 26px color-mix(in srgb, var(--cor) 45%, transparent); }
       .fio { position: absolute; inset: 0; width: 100%; height: 100%; animation: some 2.6s .2s ease-in both; }
       .fio polyline, .fio circle { vector-effect: non-scaling-stroke; fill: none; stroke: var(--fio); stroke-width: 2.5; stroke-linecap: round; filter: drop-shadow(0 0 5px var(--fio)) drop-shadow(0 0 14px var(--fio)); }
@@ -36,15 +43,17 @@
       @keyframes carimbo { from { opacity: 0; transform: scale(1.9); } }
       @media (prefers-reduced-motion: reduce) { .lance, .placa b { animation: none; } }
     </style>
-    <script type="module" crossorigin src="/senshi-dados/assets/tela.343c81aa.js"></script>
-    <link rel="modulepreload" crossorigin href="/senshi-dados/assets/getPluginId.ae619b2b.js">
+    <script type="module" crossorigin src="/senshi-dados/assets/tela.9099da36.js"></script>
+    <link rel="modulepreload" crossorigin href="/senshi-dados/assets/getPluginId.f97863fe.js">
     <link rel="modulepreload" crossorigin href="/senshi-dados/assets/tipos.bbb321c6.js">
-    <link rel="modulepreload" crossorigin href="/senshi-dados/assets/destino.f444deff.js">
+    <link rel="modulepreload" crossorigin href="/senshi-dados/assets/destino.aa411f3a.js">
     <link rel="modulepreload" crossorigin href="/senshi-dados/assets/tela.bce4250c.js">
-    <link rel="modulepreload" crossorigin href="/senshi-dados/assets/canais.01013d9b.js">
-    <link rel="modulepreload" crossorigin href="/senshi-dados/assets/usePlayerDice.8136433c.js">
-    <link rel="modulepreload" crossorigin href="/senshi-dados/assets/Camera.1b34f773.js">
-    <link rel="modulepreload" crossorigin href="/senshi-dados/assets/sumico.38c1df21.js">
+    <link rel="modulepreload" crossorigin href="/senshi-dados/assets/canais.5cc3a1a7.js">
+    <link rel="modulepreload" crossorigin href="/senshi-dados/assets/usePlayerDice.ceb1d17f.js">
+    <link rel="modulepreload" crossorigin href="/senshi-dados/assets/regras.0daef49f.js">
+    <link rel="modulepreload" crossorigin href="/senshi-dados/assets/rolagem.474f8bce.js">
+    <link rel="modulepreload" crossorigin href="/senshi-dados/assets/Camera.5aab97c5.js">
+    <link rel="modulepreload" crossorigin href="/senshi-dados/assets/sumico.60407e83.js">
   </head>
   <body>
     <div id="root"></div>
