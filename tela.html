@@ -12,25 +12,37 @@
       .lance.sai { opacity: 0; }
       .lance.token { width: 360px; height: 360px; transform-origin: 0 0; }
       .token .quadro { position: absolute; inset: 0; -webkit-mask: radial-gradient(closest-side, #000 68%, transparent); mask: radial-gradient(closest-side, #000 68%, transparent); }
-      .cheia .quadro { position: absolute; inset: 0; }
+      .token.solta .quadro { -webkit-mask: none; mask: none; }
+      .lance.explosao { inset: 0; }
+      .explosao .quadro, .cheia .quadro { position: absolute; inset: 0; }
       .placa { position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); display: flex; align-items: baseline; gap: 10px; max-width: 96%; padding: 4px 16px; border-radius: 99px; background: radial-gradient(closest-side, rgba(6, 5, 12, .9), rgba(6, 5, 12, .72)); box-shadow: 0 0 0 1px color-mix(in srgb, var(--cor) 55%, transparent), 0 4px 18px rgba(0, 0, 0, .55); white-space: nowrap; font-size: 18px; text-shadow: 0 1px 3px #000; }
       .placa span { overflow: hidden; text-overflow: ellipsis; opacity: .85; }
       .placa b { font-size: 1.5em; font-variant-numeric: lining-nums tabular-nums; text-shadow: 0 0 16px var(--cor); animation: carimbo .3s cubic-bezier(.2, 1.5, .4, 1) both; }
       .token .placa { font-size: calc(16px / var(--k)); padding: 2px calc(12px / var(--k)); }
       .cheia .placa { bottom: 7vh; padding: 8px 30px; font-size: clamp(18px, 2.6vh, 30px); }
       .cheia .placa b { font-size: 2em; }
+      .explosao .placa { bottom: auto; transform: translate(-50%, -100%); font-size: clamp(15px, 2vh, 20px); padding: 3px 14px; transition: margin .5s cubic-bezier(.2, .9, .3, 1); }
+      .explosao.lida .placa { margin-top: -14px; animation: sobe .5s cubic-bezier(.2, 1.3, .4, 1); }
+      .explosao .placa b { font-size: 2.1em; }
+      .fio { position: absolute; inset: 0; width: 100%; height: 100%; animation: some 2.6s .2s ease-in both; }
+      .fio * { fill: none; stroke: var(--fio); stroke-width: 2.5; stroke-linecap: round; filter: drop-shadow(0 0 5px var(--fio)) drop-shadow(0 0 14px var(--fio)); }
+      .fio polyline { stroke-dasharray: 10 7; animation: corre .6s linear infinite; }
+      .fio circle { stroke-width: 2; opacity: .8; }
+      @keyframes corre { to { stroke-dashoffset: -34; } }
+      @keyframes some { 0% { opacity: 0; } 12% { opacity: 1; } 60% { opacity: 1; } 100% { opacity: 0; } }
+      @keyframes sobe { from { margin-top: 46px; opacity: .2; } }
       @keyframes surge { from { opacity: 0; } }
       @keyframes carimbo { from { opacity: 0; transform: scale(1.9); } }
       @media (prefers-reduced-motion: reduce) { .lance, .placa b { animation: none; } }
     </style>
-    <script type="module" crossorigin src="/senshi-dados/assets/tela.dda00b18.js"></script>
+    <script type="module" crossorigin src="/senshi-dados/assets/tela.bc6ab103.js"></script>
     <link rel="modulepreload" crossorigin href="/senshi-dados/assets/getPluginId.ae619b2b.js">
     <link rel="modulepreload" crossorigin href="/senshi-dados/assets/tipos.bbb321c6.js">
-    <link rel="modulepreload" crossorigin href="/senshi-dados/assets/destino.e68e8646.js">
-    <link rel="modulepreload" crossorigin href="/senshi-dados/assets/canais.cc9867a6.js">
-    <link rel="modulepreload" crossorigin href="/senshi-dados/assets/tela.678cc2d2.js">
-    <link rel="modulepreload" crossorigin href="/senshi-dados/assets/usePlayerDice.828ca162.js">
-    <link rel="modulepreload" crossorigin href="/senshi-dados/assets/Camera.40ccd1c6.js">
+    <link rel="modulepreload" crossorigin href="/senshi-dados/assets/destino.bc18aec2.js">
+    <link rel="modulepreload" crossorigin href="/senshi-dados/assets/tela.3c9b908f.js">
+    <link rel="modulepreload" crossorigin href="/senshi-dados/assets/canais.d6385a90.js">
+    <link rel="modulepreload" crossorigin href="/senshi-dados/assets/usePlayerDice.d0e3f510.js">
+    <link rel="modulepreload" crossorigin href="/senshi-dados/assets/Camera.d40060fc.js">
   </head>
   <body>
     <div id="root"></div>
