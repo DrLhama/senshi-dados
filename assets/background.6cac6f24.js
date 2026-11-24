@@ -1,0 +1,1 @@
+import{O as r,g as o}from"./getPluginId.f7cc53c6.js";r.onReady(()=>{r.popover.open({id:o("popover"),url:new URL("popover.html",window.location.href).pathname,width:0,height:0,anchorOrigin:{horizontal:"RIGHT",vertical:"BOTTOM"},transformOrigin:{horizontal:"RIGHT",vertical:"BOTTOM"},disableClickAway:!0,hidePaper:!0,marginThreshold:0})});
