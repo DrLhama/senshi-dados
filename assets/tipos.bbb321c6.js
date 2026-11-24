@@ -1,0 +1,1 @@
+const t=[4,6,8,10,12,20,100],n=2,i=1e5,E=[100,1e3,1e4],a=s=>parseInt(s.slice(1),10),c=s=>s>=100,e=s=>/^E\d+$/.test(s),o=s=>e(s)||/^D\d+$/.test(s)&&c(a(s)),d=s=>o(s)?60:a(s),A=s=>/^D\d+$/.test(s)&&!t.includes(a(s));export{E,n as M,t as S,o as a,A as b,i as c,d,c as e,a as f,e as i};
