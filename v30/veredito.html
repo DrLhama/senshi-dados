@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veredito</title>
+    <style>
+      html, body { margin: 0; height: 100%; overflow: hidden; background: transparent; pointer-events: none; }
+      body { display: flex; flex-direction: column; align-items: center; gap: 10px; padding-top: 9vh; box-sizing: border-box; color: #fff; font-family: "Palatino Linotype", Palatino, "Book Antiqua", "Times New Roman", serif; }
+      .cartao { --tom: #9fb4d8; position: relative; width: min(540px, 92vw); border-radius: 14px; overflow: hidden; background: linear-gradient(180deg, rgba(14, 12, 24, .95), rgba(6, 5, 12, .95)); box-shadow: 0 0 0 1px color-mix(in srgb, var(--tom) 55%, transparent), 0 0 42px color-mix(in srgb, var(--tom) 35%, transparent), 0 14px 40px rgba(0, 0, 0, .6); animation: entra .28s cubic-bezier(.2, 1.3, .4, 1) both; }
+      .cartao.sai { animation: sai .25s ease-in both; }
+      .ok { --tom: #4dffae; } .nao { --tom: #ff4558; } .ouro { --tom: #ffd45e; }
+      .teste { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 16px; padding: 12px 22px; }
+      .quem { min-width: 0; }
+      .nome { font-size: 17px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+      .rot { font-size: 13px; opacity: .75; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+      .num { font-size: 42px; line-height: 1; font-weight: 700; font-variant-numeric: lining-nums tabular-nums; text-shadow: 0 0 20px var(--tom); }
+      .num small { display: block; text-align: center; font-size: 13px; font-weight: 400; opacity: .75; text-shadow: none; margin-top: 4px; }
+      .palavra { text-align: right; font-size: 23px; font-weight: 700; letter-spacing: .1em; color: var(--tom); text-shadow: 0 0 18px var(--tom); animation: carimbo .32s .16s cubic-bezier(.2, 1.5, .4, 1) both; }
+      .palavra small { display: block; font-size: 14px; letter-spacing: .02em; opacity: .9; }
+      .grupo { padding: 12px 20px 14px; }
+      .topo { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+      .topo .num { font-size: 34px; } .topo .num span { font-size: 18px; opacity: .7; }
+      .barra { height: 12px; margin-top: 8px; border-radius: 6px; background: rgba(255, 255, 255, .1); overflow: hidden; display: flex; }
+      .barra b { flex: none; height: 100%; transition: width .5s cubic-bezier(.2, .8, .2, 1); }
+      .gente { margin-top: 7px; font-size: 13px; opacity: .85; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+      @keyframes entra { from { opacity: 0; transform: translateY(-18px) scale(.94); } }
+      @keyframes sai { to { opacity: 0; transform: translateY(-14px); } }
+      @keyframes carimbo { from { opacity: 0; transform: scale(1.9); } }
+      @media (prefers-reduced-motion: reduce) { .cartao, .cartao * { animation-duration: .01s !important; animation-delay: 0s !important; } }
+    </style>
+    <script type="module" crossorigin src="/senshi-dados/assets/veredito.75523868.js"></script>
+    <link rel="modulepreload" crossorigin href="/senshi-dados/assets/getPluginId.ae619b2b.js">
+    <link rel="modulepreload" crossorigin href="/senshi-dados/assets/regras.0daef49f.js">
+    <link rel="modulepreload" crossorigin href="/senshi-dados/assets/canal.be2f1beb.js">
+  </head>
+  <body>
+    
+  </body>
+</html>

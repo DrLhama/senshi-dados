@@ -9,6 +9,7 @@
       canvas { position: fixed; inset: 0; width: 100%; height: 100%; }
       .lado { position: fixed; left: 0; top: 0; white-space: nowrap; opacity: 0; text-shadow: 0 1px 6px #000, 0 0 14px #000; line-height: 1.2; }
       .lado .nome { font-size: 1.3em; font-weight: 700; letter-spacing: .04em; text-shadow: 0 0 16px var(--cor), 0 1px 6px #000; max-width: 11em; overflow: hidden; text-overflow: ellipsis; }
+      .lado.ficha .nome { color: transparent; background: linear-gradient(90deg, color-mix(in srgb, var(--cor) 92%, #fff), color-mix(in srgb, var(--cor2) 92%, #fff)); -webkit-background-clip: text; background-clip: text; text-shadow: none; filter: drop-shadow(0 1px 3px #000) drop-shadow(0 0 8px var(--cor)); }
       .lado .rot { opacity: .8; }
       .lado .rot.conta { opacity: 1; font-size: 1.25em; color: #ffe9b8; animation: salta .3s cubic-bezier(.2, 1.7, .4, 1); }
       .lado .posto { color: #ffe9b8; font-size: 1.05em; letter-spacing: .08em; }
@@ -20,12 +21,12 @@
       @keyframes salta { from { transform: scale(1.8); opacity: 0; } }
       @media (prefers-reduced-motion: reduce) { .titulo, .titulo.visivel { transition: none; transform: none; } .lado .rot.conta { animation: none; } }
     </style>
-    <script type="module" crossorigin src="/senshi-dados/assets/confronto.1839147f.js"></script>
+    <script type="module" crossorigin src="/senshi-dados/assets/confronto.cdca9398.js"></script>
     <link rel="modulepreload" crossorigin href="/senshi-dados/assets/getPluginId.ae619b2b.js">
-    <link rel="modulepreload" crossorigin href="/senshi-dados/assets/tela.815b1028.js">
+    <link rel="modulepreload" crossorigin href="/senshi-dados/assets/tela.9adb45f9.js">
     <link rel="modulepreload" crossorigin href="/senshi-dados/assets/regras.0daef49f.js">
-    <link rel="modulepreload" crossorigin href="/senshi-dados/assets/regras.af262ca6.js">
-    <link rel="modulepreload" crossorigin href="/senshi-dados/assets/shader.e842dd0d.js">
+    <link rel="modulepreload" crossorigin href="/senshi-dados/assets/regras.fcba0177.js">
+    <link rel="modulepreload" crossorigin href="/senshi-dados/assets/shader.21678779.js">
   </head>
   <body>
     
