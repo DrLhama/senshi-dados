@@ -1,0 +1,1 @@
+import{O as a}from"./getPluginId.f97863fe.js";async function n(){const[t,o]=await Promise.all([a.viewport.transformPoint({x:0,y:0}),a.viewport.transformPoint({x:1e3,y:0})]);return{x:t.x,y:t.y,k:(o.x-t.x)/1e3}}const s=(t,o,r)=>r<o?(o+r)/2:Math.min(Math.max(o,t),r);export{n as l,s as p};
