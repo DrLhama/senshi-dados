@@ -1,0 +1,1 @@
+import"./getPluginId.f97863fe.js";import{C as o}from"./destino.261f19bf.js";import"./tipos.bbb321c6.js";const t={tipo:"limpar"};document.querySelector("button").onclick=()=>new BroadcastChannel(o).postMessage(t);
